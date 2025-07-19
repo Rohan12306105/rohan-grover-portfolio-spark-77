@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
-
+import pdf from "./Rohan Resume.pdf";
 const Resume = () => {
   const handleDownload = () => {
     // Create a dummy PDF download - in a real scenario, this would point to an actual resume file
