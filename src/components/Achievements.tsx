@@ -46,7 +46,7 @@ const Achievements = () => {
     },
     {
       title: "Organizer, Faculty Department",
-      organization: "Udbhav College Fest",
+      organization: "Udbhav College Fest @ IPEC",
       description: "Key organizer for the college's annual technical and cultural festival, coordinating multiple events and teams.",
       icon: Trophy,
       responsibilities: [

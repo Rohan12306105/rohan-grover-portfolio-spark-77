@@ -40,7 +40,7 @@ const Education = () => {
               <div className="flex items-center space-x-6 pt-4">
                 <div className="flex items-center space-x-2">
                   <Trophy className="h-5 w-5 text-accent" />
-                  <span className="text-foreground font-semibold">CGPA: 7.0</span>
+                  <span className="text-foreground font-semibold">CGPA: 7.1</span>
                 </div>
                 <div className="text-foreground/70">
                   (First 3 semesters, No backlogs)
