@@ -6,7 +6,7 @@ const Resume = () => {
     // Create a dummy PDF download - in a real scenario, this would point to an actual resume file
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // This would be the actual path to the resume file
-    link.download = 'Rohan Resume.pdf';
+    link.download = './Rohan Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
