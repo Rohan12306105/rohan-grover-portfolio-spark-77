@@ -69,7 +69,8 @@ const Experience = () => {
                     {["Network Security", "Threat Analysis", "Incident Response", "Risk Assessment", "Security Protocols"].map((skill, index) => (
                       <span 
                         key={index}
-                        className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm border border-accent/30"
+                        className="px-3 py-1 text-white rounded-full text-sm border border-red-600/30"
+                        style={{ backgroundColor: '#d90429' }}
                       >
                         {skill}
                       </span>

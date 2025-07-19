@@ -54,8 +54,8 @@ const Skills = () => {
                   className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary"
                 >
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Icon className={`h-5 w-5 ${category.color}`} />
+                    <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d90429' }}>
+                      <Icon className={`h-5 w-5 text-white`} />
                     </div>
                     <h4 className="text-xl font-semibold text-foreground">{category.title}</h4>
                   </div>
