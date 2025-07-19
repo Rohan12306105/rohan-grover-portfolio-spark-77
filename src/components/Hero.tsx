@@ -47,28 +47,6 @@ const Hero = () => {
             ))}
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              variant="hero" 
-              size="lg"
-              onClick={() => scrollToSection('projects')}
-              className="group min-w-[180px]"
-            >
-              <Code2 className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
-              View Projects
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => scrollToSection('contact')}
-              className="group min-w-[180px] border-primary/30 hover:border-primary hover:bg-primary/5"
-            >
-              <Briefcase className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-              Let's Connect
-            </Button>
-          </div>
         </div>
       </div>
       
