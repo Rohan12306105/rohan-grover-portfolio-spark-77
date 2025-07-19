@@ -13,7 +13,7 @@ const Experience = () => {
         </div>
         
         <div className="max-w-4xl mx-auto">
-          <Card className="card-gradient p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary">
+          <Card className="card-gradient p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10 relative">
             <div className="flex items-start space-x-6">
               {/* Icon */}
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">

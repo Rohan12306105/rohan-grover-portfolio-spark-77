@@ -103,7 +103,7 @@ const Achievements = () => {
               return (
                 <Card 
                   key={index} 
-                  className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary"
+                  className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10 relative"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">

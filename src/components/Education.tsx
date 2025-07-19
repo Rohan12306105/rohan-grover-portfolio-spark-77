@@ -17,7 +17,7 @@ const Education = () => {
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
         
-        <Card className="card-gradient p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary">
+        <Card className="card-gradient p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10 relative">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Main Education Info */}
             <div className="md:col-span-2 space-y-6">
