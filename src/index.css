@@ -39,7 +39,8 @@ All colors MUST be HSL.
 
     /* Design tokens */
     --radius: 0.75rem;
-    --gradient-hero: linear-gradient(135deg, hsl(158, 49%, 95%) 0%, hsl(158, 49%, 97%) 50%, hsl(158, 49%, 99%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(348, 94%, 85%) 25%, hsl(348, 94%, 44%) 50%, hsl(348, 94%, 85%) 75%, hsl(0, 0%, 100%) 100%);
+    --gradient-hero-flow: radial-gradient(ellipse 80% 50% at 20% 40%, hsl(348, 94%, 44% / 0.3) 0%, transparent 50%), radial-gradient(ellipse 60% 80% at 80% 60%, hsl(348, 94%, 60% / 0.2) 0%, transparent 50%), linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(348, 94%, 95%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(158, 49%, 97%) 0%, hsl(158, 49%, 95%) 100%);
     --glow-primary: 0 0 40px hsl(348, 94%, 44% / 0.2);
     --glow-accent: 0 0 30px hsl(348, 94%, 44% / 0.3);
@@ -120,6 +121,10 @@ All colors MUST be HSL.
 @layer utilities {
   .hero-gradient {
     background: var(--gradient-hero);
+  }
+  
+  .hero-gradient-flow {
+    background: var(--gradient-hero-flow);
   }
   
   .card-gradient {

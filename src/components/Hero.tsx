@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient-flow">
       {/* Decorative Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
