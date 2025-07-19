@@ -38,7 +38,7 @@ const Hero = () => {
           </p>
           
           {/* Skills Highlight */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 mb-20">
             {["C++", "Python", "MERN Stack", "AWS", "AI/ML"].map((skill, index) => (
               <div key={skill} className="flex items-center gap-2 px-4 py-2 bg-card border border-primary/20 rounded-lg hover:border-primary/40 transition-all duration-300">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
