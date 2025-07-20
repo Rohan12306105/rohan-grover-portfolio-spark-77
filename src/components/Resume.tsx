@@ -40,7 +40,7 @@ const Resume = () => {
           </Button>
           
           <p className="text-sm text-muted-foreground mt-4">
-            Last updated: December 2024
+            Last updated : 2 months ago
           </p>
         </div>
       </div>
