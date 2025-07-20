@@ -45,7 +45,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-20">
             <a
-              href="https://github.com/rohangrover06"
+              href="https://github.com/Rohan12306105"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
@@ -54,7 +54,7 @@ const Hero = () => {
               <span className="text-sm font-medium text-foreground/80">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/rohan-grover-06"
+              href="https://www.linkedin.com/in/rohangrover0610/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
