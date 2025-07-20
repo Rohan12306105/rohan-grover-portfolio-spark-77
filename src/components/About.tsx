@@ -38,7 +38,7 @@ const About = () => {
           
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary">
+            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-primary" />
@@ -50,7 +50,7 @@ const About = () => {
               </div>
             </Card>
             
-            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary">
+            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <Mail className="h-6 w-6 text-primary" />
@@ -67,7 +67,7 @@ const About = () => {
               </div>
             </Card>
             
-            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary">
+            <Card className="card-gradient p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary hover:scale-105 hover:z-10">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <Phone className="h-6 w-6 text-primary" />

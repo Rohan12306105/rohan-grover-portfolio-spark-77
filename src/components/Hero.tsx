@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Code2, Briefcase } from "lucide-react";
+import { ArrowRight, Sparkles, Code2, Briefcase, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,11 +18,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <div className="animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Computer Science Engineering Student</span>
-          </div>
           
           <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent leading-tight">
             Rohan Grover
@@ -38,13 +33,35 @@ const Hero = () => {
           </p>
           
           {/* Skills Highlight */}
-          <div className="flex flex-wrap justify-center gap-3 mb-20">
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
             {["C++", "Python", "MERN Stack", "AWS", "AI/ML"].map((skill, index) => (
               <div key={skill} className="flex items-center gap-2 px-4 py-2 bg-card border border-primary/20 rounded-lg hover:border-primary/40 transition-all duration-300">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-foreground/80">{skill}</span>
               </div>
             ))}
+          </div>
+          
+          {/* Social Links */}
+          <div className="flex justify-center gap-6 mb-20">
+            <a
+              href="https://github.com/rohangrover06"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
+            >
+              <Github className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium text-foreground/80">GitHub</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/rohan-grover-06"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
+            >
+              <Linkedin className="h-5 w-5 text-primary" />
+              <span className="text-sm font-medium text-foreground/80">LinkedIn</span>
+            </a>
           </div>
           
         </div>
