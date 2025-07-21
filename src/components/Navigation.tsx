@@ -80,15 +80,24 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          {/* Mobile Theme Toggle & Menu Button */}
+          <div className="flex items-center space-x-3 md:hidden">
+            <div className="flex items-center space-x-2">
+              <Sun className="h-4 w-4 text-foreground/60" />
+              <Switch
+                checked={theme === 'dark'}
+                onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+              />
+              <Moon className="h-4 w-4 text-foreground/60" />
+            </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
 
           {/* Mobile Navigation */}
@@ -104,19 +113,6 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              
-              {/* Mobile Theme Toggle */}
-              <div className="flex items-center justify-between pt-4 mt-4 border-t border-primary/20">
-                <span className="text-foreground/80 font-medium">Dark Mode</span>
-                <div className="flex items-center space-x-2">
-                  <Sun className="h-4 w-4 text-foreground/60" />
-                  <Switch
-                    checked={theme === 'dark'}
-                    onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
-                  />
-                  <Moon className="h-4 w-4 text-foreground/60" />
-                </div>
-              </div>
             </div>
           </div>
         )}
