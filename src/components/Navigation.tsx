@@ -91,19 +91,32 @@ const Navigation = () => {
           </Button>
         </div>
 
-        {/* Mobile Navigation */}
+          {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-primary/20 shadow-lg">
-            <div className="px-6 py-4 space-y-4">
+            <div className="px-4 py-6 space-y-3">
               {navItems.map((item, index) => (
                 <button
                   key={index}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-foreground/80 hover:text-primary transition-colors py-2"
+                  className="block w-full text-left text-foreground/80 hover:text-primary transition-colors py-3 px-4 rounded-lg hover:bg-primary/10 text-base font-medium"
                 >
                   {item.name}
                 </button>
               ))}
+              
+              {/* Mobile Theme Toggle */}
+              <div className="flex items-center justify-between pt-4 mt-4 border-t border-primary/20">
+                <span className="text-foreground/80 font-medium">Dark Mode</span>
+                <div className="flex items-center space-x-2">
+                  <Sun className="h-4 w-4 text-foreground/60" />
+                  <Switch
+                    checked={theme === 'dark'}
+                    onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+                  />
+                  <Moon className="h-4 w-4 text-foreground/60" />
+                </div>
+              </div>
             </div>
           </div>
         )}

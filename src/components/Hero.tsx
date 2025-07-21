@@ -16,14 +16,14 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
         <div className="animate-fade-in">
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent leading-tight">
             Rohan Grover
           </h1>
           
-          <p className="text-2xl md:text-3xl text-foreground/80 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/80 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-2">
             Building the future with{" "}
             <span className="text-primary font-semibold relative">
               intelligent code
@@ -33,22 +33,22 @@ const Hero = () => {
           </p>
           
           {/* Skills Highlight */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 px-2">
             {["C++", "Python", "MERN Stack", "AWS", "AI/ML"].map((skill, index) => (
-              <div key={skill} className="flex items-center gap-2 px-4 py-2 bg-card border border-primary/20 rounded-lg hover:border-primary/40 transition-all duration-300">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-foreground/80">{skill}</span>
+              <div key={skill} className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 bg-card border border-primary/20 rounded-lg hover:border-primary/40 transition-all duration-300">
+                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-primary rounded-full animate-pulse"></div>
+                <span className="text-xs sm:text-sm font-medium text-foreground/80">{skill}</span>
               </div>
             ))}
           </div>
           
           {/* Social Links */}
-          <div className="flex justify-center gap-6 mb-20">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 sm:mb-20 px-4">
             <a
               href="https://github.com/Rohan12306105"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
+              className="flex items-center justify-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
             >
               <Github className="h-5 w-5 text-primary" />
               <span className="text-sm font-medium text-foreground/80">GitHub</span>
@@ -57,7 +57,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/rohangrover0610/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
+              className="flex items-center justify-center gap-3 px-6 py-3 bg-card/80 border border-primary/20 rounded-xl hover:border-primary/40 hover:bg-card transition-all duration-300 hover:scale-105"
             >
               <Linkedin className="h-5 w-5 text-primary" />
               <span className="text-sm font-medium text-foreground/80">LinkedIn</span>
@@ -68,20 +68,20 @@ const Hero = () => {
       </div>
       
       {/* Floating Stats */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-        <div className="flex items-center gap-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl px-6 py-3">
+      <div className="absolute bottom-6 sm:bottom-12 left-1/2 transform -translate-x-1/2 px-4">
+        <div className="flex items-center gap-4 sm:gap-6 lg:gap-8 bg-card/80 backdrop-blur-sm border border-primary/20 rounded-xl px-4 sm:px-6 py-3">
           <div className="text-center">
-            <div className="text-lg font-bold text-primary">15+</div>
+            <div className="text-base sm:text-lg font-bold text-primary">15+</div>
             <div className="text-xs text-foreground/60">Projects</div>
           </div>
-          <div className="w-px h-8 bg-primary/20"></div>
+          <div className="w-px h-6 sm:h-8 bg-primary/20"></div>
           <div className="text-center">
-            <div className="text-lg font-bold text-primary">5+</div>
+            <div className="text-base sm:text-lg font-bold text-primary">5+</div>
             <div className="text-xs text-foreground/60">Technologies</div>
           </div>
-          <div className="w-px h-8 bg-primary/20"></div>
+          <div className="w-px h-6 sm:h-8 bg-primary/20"></div>
           <div className="text-center">
-            <div className="text-lg font-bold text-primary">2+</div>
+            <div className="text-base sm:text-lg font-bold text-primary">2+</div>
             <div className="text-xs text-foreground/60">Years</div>
           </div>
         </div>
